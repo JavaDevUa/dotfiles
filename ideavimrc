@@ -1,0 +1,42 @@
+nnoremap j h
+nnoremap k j
+nnoremap l k
+nnoremap ; l
+
+vnoremap j h
+vnoremap k j
+vnoremap l k
+vnoremap ; l
+
+inoremap ` <ESC>
+inoremap <ESC> <NOP>
+
+vnoremap ` <ESC>
+vnoremap <ESC> <NOP>
+
+cnoremap ` <ESC>
+
+nnoremap <S-Left> :action EditorLeftWithSelection<CR>
+nnoremap <S-Right> :action EditorRightWithSelection<CR>
+nnoremap <S-Up> :action EditorUpWithSelection<CR>
+nnoremap <S-Down> :action EditorDownWithSelection<CR>
+
+inoremap <S-Left> <C-O>:action EditorLeftWithSelection<CR>
+inoremap <S-Right> <C-O>:action EditorRightWithSelection<CR>
+inoremap <S-Up> <C-O>:action EditorUpWithSelection<CR>
+inoremap <S-Down> <C-O>:action EditorDownWithSelection<CR>
+
+" yank/paste to/from system clipboard
+map <leader>y "*y
+map <leader>p "*p
+set clipboard=unnamed
+
+
+inoremap <A-j> <Left>
+inoremap <A-k> <Down>
+inoremap <A-l> <Up>
+inoremap <A-;> <Right>
+
+map <C-c> "+y
+map <C-v> "+gP
+set clipboard+=ideaput
