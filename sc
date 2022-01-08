@@ -2,7 +2,7 @@
 
 sudo pacman -S --noconfirm --needed base-devel
 sudo pacman -S --noconfirm go
-git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+git clone https://aur.archlinux.org/yay.git && cd yay && yes | makepkg -si
 yay -S --sudoloop --noconfirm j4-dmenu-desktop
 sudo pacman -S --noconfirm bspwm sxhkd alacritty dmenu ranger neovim ttf-font-awesome feh picom libreoffice-fresh
 
