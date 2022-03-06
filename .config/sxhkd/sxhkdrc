@@ -9,8 +9,7 @@ super + Return
 
 # program launcher
 super + @space
-	j4-dmenu-desktop	#p_custom
-	#dmenu_run
+	j4-dmenu-desktop
 
 # make sxhkd reload its configuration files:
 super + Escape
