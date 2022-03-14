@@ -5,7 +5,6 @@
 # terminal emulator
 super + Return
 	alacritty
-	#urxvt
 
 # program launcher
 super + @space
@@ -123,3 +122,5 @@ super + {Left,Down,Up,Right}
 
 
 # p_custom:
+super + u
+	alacritty -e ranger
