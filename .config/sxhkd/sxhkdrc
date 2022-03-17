@@ -122,5 +122,10 @@ super + {Left,Down,Up,Right}
 
 
 # p_custom:
+# open ranger
 super + u
 	alacritty -e ranger
+
+# show time
+super + ctrl + n
+	alacritty -e tty-clock
